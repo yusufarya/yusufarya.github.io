@@ -1,0 +1,181 @@
+html{
+	position: relative;
+}
+
+body{
+	
+	margin-bottom: 150px;
+	margin-top: 30px;
+	height: 100%;
+}
+	
+
+/*=============== JUMBOTRON ===============*/
+.jumbotron{
+	background-image: url('../img/jumbotron/bgbg.jpg');
+	background-position: 0 -260px;
+	background-size: cover;
+	background-attachment: fixed;
+	border-bottom: 2px solid #00BFFF;
+	min-height: 440px;
+	overflow: hidden;
+}
+
+.jumbotron h1, .jumbotron p {
+	color: azure;
+	text-shadow: 1px 5px 8px rgb(1,1,1,1.6);
+}
+
+.jumbotron img{
+	width: 200px;
+	border: 5px solid #eaeaea;
+	border-radius: 50%;
+	box-shadow: 2px 7px 13px rgba(0,0,0,0.6);
+	align-items: center;
+}
+
+.jumbotron .sosmed a{
+	padding: 2px 10px;
+	display: inline-block;
+	font-size: 18px;
+	background-color: #DCDCDC;
+	color: #6495ED;
+}
+
+#judul hr{
+	width: 250px;
+	border-top: 3px solid #666;
+}
+
+section{
+	min-height: 550px;
+}
+
+
+/*=============== ABOUT ===============*/
+.about{
+	padding-top: 20px;
+}
+
+.about h2{
+	margin-top: 50px;
+}
+
+.ptengah{
+	opacity: 0;
+	transform: translate(0, -30px);
+	transition: 1.8s;
+	overflow-y: hidden;
+}
+
+.ptengah.pmuncul{
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.bagian-kiri, .bagian-kanan{
+	opacity: 0;
+	transform: translate(-50px, 0) rotate(15deg); 
+	transition: 1s;
+}
+
+.bagian-kanan{
+	transform: translate(50px, 0) rotate(-15deg);
+	transition: 1.2px;
+}
+
+.bagian-kiri.bMuncul, .bagian-kanan.bMuncul{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.about table{
+	border: 2px solid white;
+	width: 550px;
+	font-size: 12px;
+}
+
+.about table th td{
+	border: 1px solid white;
+	padding: 0;
+}
+
+.about ul{
+	margin-top: 20px;
+}
+
+.about ul, li {
+	margin-left: 20px;
+}
+
+/*=============== PORTFOLIO ===============*/
+.portfolio{
+	padding: 10px 10px 40px;
+	border-top: 2px solid salmon;
+	background-color: #eee;
+}
+
+.portfolio h2{
+	margin-top: 50px;
+}
+
+.portfolio img{
+	width: 330px;
+	height: 210px;
+	margin-bottom: 15px;
+	border-radius: 0.5rem;
+	border: 4px solid white;
+}
+
+.portfolio .thumbnail{
+	opacity: 0;
+	transform: translate(0, -30px);
+	transition: .5s;
+}
+
+.portfolio .thumbnail.muncul{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+/*=============== CONTACT ===============*/
+.contact{
+	padding: 10px 0;
+	border-top: 2px solid #00BFFF;
+	height: 650px;
+}
+
+.contact h2{
+	margin-top: 50px;
+}
+
+.scroll-top{
+	opacity: 0.01;
+	position: fixed;
+	border: 2px solid #00BFFF;
+	border-radius: 45%;
+	background-color: #eee;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 26px;
+}
+
+.scroll-top.muncul{
+	opacity: 1;
+}
+
+
+/*=============== FOOTER ===============*/
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 78px;
+	background-color: #110;
+}
+
+footer p{
+	margin-top: 13px;
+	font-size: 0.9em;
+	color: white;
+}
